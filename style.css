@@ -1,0 +1,9 @@
+.nav{
+    border-style: dashed;
+    border-color: blue;
+    border-radius: 5px;
+}
+
+.logo img{
+    width: 100px;
+}
