@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <title>Allt om Vindö</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--länk till javascript filen-->
+    <script type="text/javascript" src="script.js"></script>
+
+    <!--sid navigeringen i toppen + logon-->
+    <div class="head" id="sidhuvud">
+
+        <!--logon i toppnavigeringen-->
+        <div class="logo">
+            <a href="index.html">
+                <img src="bilder/Vindologgavit.png" alt="Väldigt fin bild på Vindö 50" id="logga">
+            </a>
+        </div>
+
+        <!--länkarna i toppnavigeringen-->
+        <div class="topnav" id="topnavid">
+
+            <div class="länkar">
+                <ul>
+                    <!--Allt om vindö länken-->
+                    <li class="topnavli1"> <a href="index.html">Allt om Vindö</a></li>
+                    <!--Vindövarvet länken-->
+                    <li> <a href="vindovarvet.html">Vindövarvet</a></li>
+                    <!--De olika båtarna knappen-->
+                    <li>
+                        <!--funktion som gör så att när man klickar på De olika båtarna man får upp ett litet fönster där man kan välja mellan de två olika båtarna-->
+                        <a onclick="båtarnaFunction()" class="båtarnaknapp">De olika båtarna</a>
+                        <div id="båtarnainnehållid" class="båtarnainnehåll">
+                            <a href="vindö50.html">Vindö 50</a>
+                            <a href="vindö30.html">Vindö 30</a>
+                        </div>
+                    </li>
+                    <!--Byggandet länk-->
+                    <li> <a href="byggandet.html">Byggandet</a> </li>
+                    <!--Om oss länken-->
+                    <li> <a href="kontaktaoss.html">Om oss</a> </li>
+                </ul>
+            </div>
+
+            <!--Top navigaionen som sker på små skärmar-->
+            <div class="dropdownlist">
+                <a onclick="topnavFunction()" class="button1">Meny: <i class="arrow rigth"></i></a>
+
+                <div id="top-lista-id" class="top-lista">
+
+                    <!--Själva länkarna-->
+                    <a href="index.html" class="top-lista-text">Allt om Vindö</a>
+                    <a href="vindovarvet.html" class="top-lista-text">Vindövarvet</a>
+                    <a href="vindö50.html" class="top-lista-text">Vindö 50</a>
+                    <a href="vindö30.html" class="top-lista-text">Vindö 30</a>
+                    <a href="byggandet.html" class="top-lista-text">Byggandet</a>
+                    <a href="kontaktaoss.html" class="top-lista-text">Om oss</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--Sidans titel-->
+    <div class="titel">
+        <header>
+            <h1>Vindö</h1>
+            <h2>klassiska segelbåtar</h2>
+        </header>
+    </div>
+
+    <!--Bilden under sidans titel-->
+    <div class="avlångtoppbild">
+        <img src="bilder/vindö50avlång.jpg" alt="Väldigt fin bild på Vindö 50">
+    </div>
+
+    <!--Första stycket på sidan-->
+    <div class="stycke1alltomvindö">
+
+        <!--Texten i första stycket-->
+        <div class="text1">
+            <h2>Vindö - en fantastisk båtupplevelse</h2>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+
+        <!--Bilden i första stycket-->
+        <div class="bild1">
+            <img src="bilder/vindö50seglar.jpg" alt="Seglingsbild">
+        </div>
+
+    </div>
+
+    <!--Bilden till andra stycket-->
+    <div class="stycke2bild">
+        <img src="bilder/vindö22ritning.jpg" alt="aaaaaaaaaa">
+    </div>
+
+    <!--Andra stycket-->
+    <div class="stycke2alltomvindö">
+
+
+
+        <!--Texten i andra stycket-->
+        <div class="text1">
+            <h2>Mannen bakom båtarna - Carl Andersson</h2>
+            <p>Det var Carl Andersson som 1926 skapade Vindövarvet, numera Vindö
+                marin på vindön. han föddes år 1895 och utbildade sig till
+                båtsnickare. Den första Vindön var Vindö 28 som han ritade år
+                1958 och som på en gång blev en stor succe för varvet. 1963 ritade
+                han Vindö 30 och den mindre Vindö 18 där Vindö 30 blev den
+                populärare. Han ritade senare även Vindö 50 som kom att bli
+                extremt känd runt om i världen som en av de vackraste segelbåtarna
+                i historien. Han dog tyvär år 1979. På bilden till vänster kan man
+                se en ritning av Vindö 32:an medans de andra två bilderna på sidan
+                är på en Vindö 50 från två olika vinklar.
+            </p>
+        </div>
+
+    </div>
+
+    <!--Footern-->
+    <div class="footer">
+        <!--Texten i footern-->
+        <div class="textifooter">
+            <br>
+            <!--När man trycker på texten hamnar man i toppen igen-->
+            <h3><a onclick="backtotopFunction()">tryck för att gå till toppen</a></h3>
+        </div>
+    </div>
+
+</body>
+
+</html>

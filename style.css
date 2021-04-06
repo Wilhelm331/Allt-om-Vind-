@@ -1,0 +1,578 @@
+/* Generella taggar css */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 20px;
+    background-color:  #0000a0;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    line-height: 150%;
+    word-wrap: break-word;
+}
+
+h1{
+    font-size: 100px;
+    text-align: center;
+    color: #b31355;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    word-wrap: break-word;
+}
+
+h2{
+    color: #b31355;
+    text-align: center;
+    font-size: 250%;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    word-wrap: break-word;
+}
+
+h3{
+    color: #b31355;
+    text-align: center;
+    font-size: 250%;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    word-wrap: break-word;
+}
+
+/* Slut på generella taggars css */
+
+
+/* Den lustiga skrollen */
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #b31355; 
+    border-radius: 15px;
+  }
+
+/* Slut på den lustiga skrollens css */
+
+
+/* Navigationen i toppen av alla sidornas css */
+
+.head{
+    position: fixed;
+    top: 4%;
+    transition: 0.5s;
+    display: block;
+    margin-bottom: 1000px;
+}
+
+.logo img{
+    width: 10%;
+    float: left;
+    border-radius: 1%;
+}
+
+.topnav{
+    margin-left: 10px; 
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+    margin-left: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+.topnav a{
+    font-size: 30px;
+    color: #fffff0;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.3s;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #0000a0;
+    border-color: #0000a0;
+
+}
+
+.topnav a:hover{
+    background-color: #000080;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+.topnavli1{
+    margin-left: 3%;
+}
+
+/* De olika båtarna konstig sak när man trycker på de olika båtarnas css */
+
+.båtarnaknapp {
+    background-color: #0000a0;
+    color: #fffff0;
+    cursor: pointer;
+}
+
+.dropbtn:hover{
+    background-color: #000080;
+}
+
+.båtarnainnehåll {
+    background-color: #0000a0;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+    margin-left: 39.5%;
+    border-radius: 10px;  
+    position: absolute;    
+    display: none;
+}
+
+.båtarnainnehåll a {
+    color: #fffff0;
+    padding: 12px 16px;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+/* Slut på de olika båtarna dropdown css */
+
+
+/* Css som änvänds när man använder små skärmar för att ändra topnav länkarna */
+
+.button1{
+    float: left;
+    cursor: pointer;
+    display: none;
+    margin-right: 40px;
+    margin-left: 5%;
+}
+
+@media screen and (min-width: 1501px) {
+    .head{
+        background-color: #0000a0;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .länkar {
+        display: none;
+    }
+    .button1 {
+      display: block;
+    }
+}
+
+
+.top-lista{
+    background-color: #0000a0;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+    border-radius: 10px;  
+    position: relative;    
+    float: right;
+    display: none;
+    cursor: pointer;
+    margin-right: 7%;
+}
+
+.top-lista a {
+    color: #fffff0;
+    display: block;
+    padding: 12px 16px;
+    font-size: 23px;
+}
+
+.show2 {
+    display: block;
+}
+
+.arrow {
+    border: solid #fffff0;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.rigth {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+/* Slut på css som änvänds när man använder mobil för att ändra topnav länkarna */
+
+
+/* Slut på topp navigationens css */
+
+
+
+/* Headerns text css */
+
+.titel{
+    margin-top: 240px;
+    word-wrap: break-word;
+}   
+
+header h1{
+    font-size: 100px;
+    text-align: center;
+    color: #b31355;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Slut på headerns css */
+
+
+
+/* Den avlånga segbåtsbilden under topp navigationens css */
+
+.avlångtoppbild{
+    margin-top: 50px;
+}
+
+.avlångtoppbild img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Slut på den avlånga segbåtsbilden under topp navigationens css */
+
+
+
+/* Allt om Vindö css */
+
+/* Förtsa styckets css (Allt om Vindö) */
+
+.stycke1alltomvindö{
+    margin: 100px;
+    margin-top: 200px;
+    display: block;
+    overflow: hidden;
+}
+
+.stycke1alltomvindö .text1{
+    width: 50%;
+    float: left;
+}
+
+.stycke1alltomvindö .bild1{
+    margin-top: 2%;
+}
+
+.stycke1alltomvindö .bild1 img{
+    border-radius: 50%;
+    width: 50%;    
+    float: right;
+}
+
+/* Slup på förtsa på stycket + bild css (Allt om Vindö) */
+
+/* Andra styckets css (Allt om Vindö) */
+
+.stycke2bild{
+    float: left;
+    width: 35%;
+    min-width: 400px;
+    margin-top: 100px;
+}
+
+.stycke2bild img{
+    border-radius: 15%;
+    width: 100%;
+}
+
+.stycke2alltomvindö{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 60%; 
+    overflow: hidden;
+}
+
+.stycke2alltomvindö .text1{
+    margin-left: 20px;
+    float: left;
+}
+
+/*Slut på andra styckets css (Allt om Vindö)*/
+
+/* Slut på allt om Vindö css */
+
+
+/* Kontakta oss css */
+
+/* Första styckets css (Kontakta oss) */
+
+.stycke1kontaktaoss .text1{
+    margin-top: 50px;
+}
+
+.stycke1kontaktaoss .text2{
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.stycke1kontaktaoss .bild1{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.stycke1kontaktaoss .bild1 img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Andra styckets css (Kontakta oss) */
+
+.stycke2kontaktaoss{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stycke2kontaktaoss .text2{
+    width: 32%;
+    float: left;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.stycke2kontaktaoss h3{
+    font-size: 200%;
+    text-align: left;
+}
+
+.stycke2kontaktaoss .bild1{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.stycke2kontaktaoss .bild1 img{
+    width: 100%;
+    border-radius: 30px;
+    display: block;
+}
+
+.stycke2kontaktaoss .text2 p{
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.stycke2kontaktaoss .text2 a{
+    text-decoration: none;
+    color: #fffff0;
+}
+
+/* Slut på kontakta oss css */
+
+
+
+/* Vindö 50 css */
+
+/* Första stycket */
+
+.stycke1vindö50 {
+    margin-top: 100px;
+}
+
+.stycke1vindö50 .text1{
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stycke1vindö50 .bild1{
+    margin-top: 100px;
+}
+
+.stycke1vindö50 .bild1 img{
+    width: 50%;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Andra stycket */
+
+.stycke2vindö50{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.stycke2vindö50 .bild1{
+    margin-top: 100px;
+}
+
+.stycke2vindö50 .bild1 img{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    display: block;
+}
+
+
+/* slut på Vindö 50 css */
+
+
+
+
+/* Vindö 30 css */
+
+
+
+/* Slut på Vindö 30 css */
+
+
+
+/* Vindövarvet css */
+
+/* Första stycket */
+
+.stycke1vindövarvet{
+    margin: 100px;
+    margin-top: 200px;
+    display: block;
+    overflow: hidden;
+}
+
+.stycke1vindövarvet .text1{
+    width: 50%;
+    float: left;
+}
+
+.stycke1vindövarvet .bild1{
+    margin-top: 2%;
+}
+
+.stycke1vindövarvet .bild1 img{
+    border-radius: 50%;
+    width: 50%;    
+    float: right;
+}
+
+/* Slut på förtsa på stycket + bild css (Vindövarvet) */
+
+/* Andra styckets css (Vindövarvet) */
+
+.stycke2vindövarvet{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.stycke2vindövarvet .text1{
+    width: 60%;
+    float: right;
+}
+
+.stycke2vindövarvet .bild1{
+    float: left;
+    width: 38%;
+}
+
+.stycke2vindövarvet .bild1 img{
+    border-radius: 15%;
+    width: 100%;
+}
+
+/* Slut på andra styckets css (Vindövarvet) */
+
+/* Slut på vindövarvet css */
+
+
+
+/* Byggandet css */
+
+.stycke1byggandet{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.stycke1byggandet .bild1{
+    float: left;
+    width: 49%;
+    margin-bottom: 100px;
+}
+
+.stycke1byggandet .bild1 img{
+    width: 100%;
+}
+
+.stycke2byggandet .text1{
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.stycke3byggandet .bild1{
+    float: left;
+    width: 49%;
+    margin-bottom: 100px;
+}
+
+.stycke3byggandet .bild1 img{
+    width: 100%;
+}
+
+.stycke4byggandet .text1{
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Slut på byggandet css */
+
+
+
+/* Footer css */
+
+.footer{
+    background-image: url(bilder/vattenbild.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 200px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.textifooter a{
+    background-color: #000080;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.textifooter h3{
+    font-size: 300%;
+}
+
+/* Slut på footerns css */

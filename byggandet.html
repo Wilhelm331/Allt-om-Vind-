@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <title>Vindö 50</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--länk till javascript filen-->
+    <script type="text/javascript" src="script.js"></script>
+
+    <!--sid navigeringen i toppen + logon-->
+    <div class="head" id="sidhuvud">
+
+        <!--logon i toppnavigeringen-->
+        <div class="logo">
+            <a href="index.html">
+                <img src="bilder/Vindologgavit.png" alt="Väldigt fin bild på Vindö 50" id="logga">
+            </a>
+        </div>
+
+        <!--länkarna i toppnavigeringen-->
+        <div class="topnav" id="topnavid">
+
+            <div class="länkar">
+                <ul>
+                    <!--Allt om vindö länken-->
+                    <li class="topnavli1"> <a href="index.html">Allt om Vindö</a></li>
+                    <!--Vindövarvet länken-->
+                    <li> <a href="vindovarvet.html">Vindövarvet</a></li>
+                    <!--De olika båtarna knappen-->
+                    <li>
+                        <!--funktion som gör så att när man klickar på De olika båtarna man får upp ett litet fönster där man kan välja mellan de två olika båtarna-->
+                        <a onclick="båtarnaFunction()" class="båtarnaknapp">De olika båtarna</a>
+                        <div id="båtarnainnehållid" class="båtarnainnehåll">
+                            <a href="vindö50.html">Vindö 50</a>
+                            <a href="vindö30.html">Vindö 30</a>
+                        </div>
+                    </li>
+                    <!--Byggandet länk-->
+                    <li> <a href="byggandet.html">Byggandet</a> </li>
+                    <!--Om oss länken-->
+                    <li> <a href="kontaktaoss.html">Om oss</a> </li>
+                </ul>
+            </div>
+
+            <!--Top navigaionen som sker på små skärmar-->
+            <div class="dropdownlist">
+                <a onclick="topnavFunction()" class="button1">Meny: <i class="arrow rigth"></i></a>
+
+                <div id="top-lista-id" class="top-lista">
+
+                    <!--Själva länkarna-->
+                    <a href="index.html" class="top-lista-text">Allt om Vindö</a>
+                    <a href="vindovarvet.html" class="top-lista-text">Vindövarvet</a>
+                    <a href="vindö50.html" class="top-lista-text">Vindö 50</a>
+                    <a href="vindö30.html" class="top-lista-text">Vindö 30</a>
+                    <a href="byggandet.html" class="top-lista-text">Byggandet</a>
+                    <a href="kontaktaoss.html" class="top-lista-text">Om oss</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Sidans titel-->
+    <div class="titel">
+        <header>
+            <h1>Byggandet av Vindöbåtarna</h1>
+        </header>
+    </div>
+
+    <!--Bilden under sidans titel-->
+    <div class="avlångtoppbild">
+        <img src="bilder/vindö50avlång.jpg" alt="Väldigt fin bild på Vindö 50">
+    </div>
+
+    <!--Första stycket på sidan-->
+    <div class="stycke1byggandet">
+
+        <div class="bild1">
+            <img src="bilder/lucka.jpg" alt="bild">
+        </div>
+
+        <div class="bild1">
+            <img src="bilder/förpik.jpg" alt="bild">
+        </div>
+
+    </div>
+
+    <!--Andra stycket-->
+    <div class="stycke2byggandet">
+
+        <div class="text1">
+            <h2>Hur byggandet av båtarna gick till</h2>
+            <p>När Vindövarvet började tillverka båtar snickrade de hela båtarna
+                för hand och gjorde dem av mahogny men gick senare över till
+                att göra skroven utav plast men forsatte att göra resten av båten
+                av trä. De gjorde båtarna på efter beställning vilket gjorde att 
+                kunden kunde välja ganska fritt hur den ville att dennes båt skulle
+                se ut. Hela båtarna var gjorda av mahogny utom skrovet som var av
+                plast. Det gick inte att se plast någonstans innuti båtarna. Bilden 
+                högst upp på sidan är på en Vindö 50 och på bilderna ovan kan man se
+                förpiken i en Vindö 50. På bilden nedan till vänster kan man se fördäcket
+                på en Vindö 50 till nedan till höger kan man se köket på samma Vindö 50.
+                <br><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+
+    </div>
+
+    <!--Tredje stycket med två till bilder-->
+    <div class="stycke3byggandet">
+
+        <div class="bild1">
+            <img src="bilder/vindö50fördäck.jpg" alt="bild">
+        </div>
+
+        <div class="bild1">
+            <img src="bilder/kök.jpg" alt="bild">
+        </div>
+
+    </div>
+
+        <!--Fjärde stycket-->
+        <div class="stycke4byggandet">
+
+            <div class="text1">
+                <h2>Byggandet idag</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+    
+        </div>
+
+    <!--Footern-->
+    <div class="footer">
+        <!--Texten i footern-->
+        <div class="textifooter">
+            <br>
+            <!--När man trycker på texten hamnar man i toppen igen-->
+            <h3><a onclick="backtotopFunction()">tryck för att gå till toppen</a></h3>
+        </div>
+    </div>
+
+</body>
+
+</html>

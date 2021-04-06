@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <title>Om oss</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--länk till javascript filen-->
+    <script type="text/javascript" src="script.js"></script>
+
+    <!--sid navigeringen i toppen + logon-->
+    <div class="head" id="sidhuvud">
+
+        <!--logon i toppnavigeringen-->
+        <div class="logo">
+            <a href="index.html">
+                <img src="bilder/Vindologgavit.png" alt="Väldigt fin bild på Vindö 50" id="logga">
+            </a>
+        </div>
+
+        <!--länkarna i toppnavigeringen-->
+        <div class="topnav" id="topnavid">
+
+            <div class="länkar">
+                <ul>
+                    <!--Allt om vindö länken-->
+                    <li class="topnavli1"> <a href="index.html">Allt om Vindö</a></li>
+                    <!--Vindövarvet länken-->
+                    <li> <a href="vindovarvet.html">Vindövarvet</a></li>
+                    <!--De olika båtarna knappen-->
+                    <li>
+                        <!--funktion som gör så att när man klickar på De olika båtarna man får upp ett litet fönster där man kan välja mellan de två olika båtarna-->
+                        <a onclick="båtarnaFunction()" class="båtarnaknapp">De olika båtarna</a>
+                        <div id="båtarnainnehållid" class="båtarnainnehåll">
+                            <a href="vindö50.html">Vindö 50</a>
+                            <a href="vindö30.html">Vindö 30</a>
+                        </div>
+                    </li>
+                    <!--Byggandet länk-->
+                    <li> <a href="byggandet.html">Byggandet</a> </li>
+                    <!--Om oss länken-->
+                    <li> <a href="kontaktaoss.html">Om oss</a> </li>
+                </ul>
+            </div>
+
+            <!--Top navigaionen som sker på små skärmar-->
+            <div class="dropdownlist">
+                <a onclick="topnavFunction()" class="button1">Meny: <i class="arrow rigth"></i></a>
+
+                <div id="top-lista-id" class="top-lista">
+
+                    <!--Själva länkarna-->
+                    <a href="index.html" class="top-lista-text">Allt om Vindö</a>
+                    <a href="vindovarvet.html" class="top-lista-text">Vindövarvet</a>
+                    <a href="vindö50.html" class="top-lista-text">Vindö 50</a>
+                    <a href="vindö30.html" class="top-lista-text">Vindö 30</a>
+                    <a href="byggandet.html" class="top-lista-text">Byggandet</a>
+                    <a href="kontaktaoss.html" class="top-lista-text">Om oss</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Sidans titel-->
+    <div class="titel">
+        <header>
+            <h1>Vindö - om oss</h1>
+        </header>
+    </div>
+
+    <!--Bilden under sidans titel-->
+    <div class="avlångtoppbild">
+        <img src="bilder/vindö50avlång.jpg" alt="Väldigt fin bild på Vindö 50">
+    </div>
+
+    <!--Vem driver denna sida stycke-->
+    <div class="stycke1kontaktaoss">
+        <!--rubriken-->
+        <div class="text1">
+            <h2>Vem är det som driver denna sida?</h2>
+        </div>
+        <!--Texten-->
+        <div class="text2">
+            <p>Detta är en sida skriven som ett skolprojekt
+                men är fortfarande en väldigt bra sida för
+                att få reda på information om Vindö. Bilden 
+                högst upp på sidan är på en Vindö 50 och bilden
+                under kan man se Stora Karlsö. På bilden längst
+                ner kan man se en annan del av Stora Karlsö. 
+            </p>
+        </div>
+        <!--Bilden under stycket-->
+        <div class="bild1">
+            <img src="bilder/storakarlsönatt.jpg" alt="aaaaaaaaaa">
+        </div>
+    </div>
+
+    <!--Andra stycket-->
+    <div class="stycke2kontaktaoss">
+
+        <!--Rubriken i andra stycket-->
+        <div class="text1">
+            <h2>Kontaktinformation</h2>
+        </div>
+
+        <!--Texten i andra stycket-->
+        <div class="text2">
+            <h3>Mail</h3>
+            <p><a href="mailto:wilsel331@edu.linkoping.se"><Strong>Mail: </Strong>wilsel331@edu.linkoping.se</a></p>
+        </div>
+
+        <!--Texten i andra stycket-->
+        <div class="text2">
+            <h3>Telefon</h3>
+            <p><a href="tel:+46705452201"></a><strong>Telefon: </strong>070 545 32 01</p>
+        </div>
+
+        <!--Texten i andra stycket-->
+        <div class="text2">
+            <h3>Sociala medier</h3>
+            <p><strong>Instagram: </strong>@vindoinfo</p>
+            <p><strong>Facebook: </strong>@vindoinfo</p>
+            <p><strong>Snapchat: </strong>@vindoinfo</p>
+            <p><strong>Youtube: </strong><a href="https://www.youtube.com/results?search_query=vind%C3%B6"></a>Vindö</p>
+        </div>
+        <br>
+
+        <!--Bilden under andra stycket-->
+        <div class="bild1">
+            <img src="bilder/storakarlsösten.jpg" alt="aaaaaaaaaa">
+        </div>
+
+    </div>
+
+    <!--Footern-->
+    <div class="footer">
+        <!--Texten i footern-->
+        <div class="textifooter">
+            <br>
+            <!--När man trycker på texten hamnar man i toppen igen-->
+            <h3><a onclick="backtotopFunction()">tryck för att gå till toppen</a></h3>
+        </div> 
+    </div>
+
+</body>
+
+</html>

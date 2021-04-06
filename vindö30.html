@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <title>Vindö 30</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--länk till javascript filen-->
+    <script type="text/javascript" src="script.js"></script>
+
+    <!--sid navigeringen i toppen + logon-->
+    <div class="head" id="sidhuvud">
+
+        <!--logon i toppnavigeringen-->
+        <div class="logo">
+            <a href="index.html">
+                <img src="bilder/Vindologgavit.png" alt="Väldigt fin bild på Vindö 50" id="logga">
+            </a>
+        </div>
+
+        <!--länkarna i toppnavigeringen-->
+        <div class="topnav" id="topnavid">
+
+            <div class="länkar">
+                <ul>
+                    <!--Allt om vindö länken-->
+                    <li class="topnavli1"> <a href="index.html">Allt om Vindö</a></li>
+                    <!--Vindövarvet länken-->
+                    <li> <a href="vindovarvet.html">Vindövarvet</a></li>
+                    <!--De olika båtarna knappen-->
+                    <li>
+                        <!--funktion som gör så att när man klickar på De olika båtarna man får upp ett litet fönster där man kan välja mellan de två olika båtarna-->
+                        <a onclick="båtarnaFunction()" class="båtarnaknapp">De olika båtarna</a>
+                        <div id="båtarnainnehållid" class="båtarnainnehåll">
+                            <a href="vindö50.html">Vindö 50</a>
+                            <a href="vindö30.html">Vindö 30</a>
+                        </div>
+                    </li>
+                    <!--Byggandet länk-->
+                    <li> <a href="byggandet.html">Byggandet</a> </li>
+                    <!--Om oss länken-->
+                    <li> <a href="kontaktaoss.html">Om oss</a> </li>
+                </ul>
+            </div>
+
+            <!--Top navigaionen som sker på små skärmar-->
+            <div class="dropdownlist">
+                <a onclick="topnavFunction()" class="button1">Meny: <i class="arrow rigth"></i></a>
+
+                <div id="top-lista-id" class="top-lista">
+
+                    <!--Själva länkarna-->
+                    <a href="index.html" class="top-lista-text">Allt om Vindö</a>
+                    <a href="vindovarvet.html" class="top-lista-text">Vindövarvet</a>
+                    <a href="vindö50.html" class="top-lista-text">Vindö 50</a>
+                    <a href="vindö30.html" class="top-lista-text">Vindö 30</a>
+                    <a href="byggandet.html" class="top-lista-text">Byggandet</a>
+                    <a href="kontaktaoss.html" class="top-lista-text">Om oss</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Sidans titel-->
+    <div class="titel">
+        <header>
+            <h1>Vindö 30</h1>
+        </header>
+    </div>
+
+    <!--Bilden under sidans titel-->
+    <div class="avlångtoppbild">
+        <img src="bilder/vindö50avlång.jpg" alt="Väldigt fin bild på Vindö 50">
+    </div>
+
+    <!--Första stycket på sidan-->
+    <div class="stycke1vindö50">
+
+        <!--Överskriften till första stycket-->
+        <div class="överskriftvindö50">
+            <h2>vindö 30 - den perfekta nästan segelbåten</h2>
+        </div>
+
+        <!--Texten i första stycket-->
+        <div class="text1">
+            <p>Vindö 30 som ritades av Carl Andersson som en rymligare och snabbare alternativ till
+                Vindö 28. De första modellerna tillverkades i trä med järnköl medans de lite senare
+                bytte till plastskrov och inplastad blyköl. Den är som en mindre påkostad mindre kopia 
+                av Vindö 50 och särskilt de senare modellerna blev den nästan en nästan perfekt mindre 
+                kopia, men fortfarande mindre påkostad. Båten är 30 fot/9,1 m lång och väger 3400 kg.
+                Segelarean är 30 kvadratmeter och sticker bara 1,3 m under vattenytan. Detta gör Vindö 30
+                till en nästan perfekt mindre kopia av Vindö 50 som är den perfekta segelbåten. Bilden 
+                högst upp på sidan är på en Vindö 50 
+            </p>
+        </div>
+
+        <!--Bilden i första stycket-->
+        <div class="bild1">
+            <img src="bilder/vindö30sida.jpg" alt="bild">
+        </div>
+
+    </div>
+
+    <!--Andra stycket-->
+    <div class="stycke2vindö50">
+
+        <!--Texten i andra stycket-->
+        <div class="text1">
+            <h2>De olika varianterna av Vindö 30</h2>
+            <p>Vindö varvet gjorde båtarna efterbeställning vilket gjorde att det inte finns
+                någon Vindö 30 som ser likadan ut som den andra. Det fanns dock vissa standardmodeller
+                som man beställde ifrån och man fick själv välja hur detaljerna skulle vara. Ville man ha
+                en annorlunda kyl fick man det men om man ville ha en anurlunda förpik så fick man det också.
+                Det fanns i princip bara två olika varianter av båten vilka var den tidigare versionen med
+                stegad överbyggnad, träskrov och järnköl och den senare mer moderna versionen med blyköl,
+                plastskrov och en rak överbyggnad, den nya versionen är på utsidan mycket lik Vindö 50 CC.
+                På bilden över denna text kan man se en Vindö 30 sett från sidan och på bilden under kan man 
+                se samma Vindö 30 fast denna gång ovanifrån.
+            </p>
+
+            <!--Bilden i andra stycket-->
+            <div class="bild1">
+                <img src="bilder/vindö30uppifrån.jpg" alt="bild">
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footern-->
+    <div class="footer">
+        <!--Texten i footern-->
+        <div class="textifooter">
+            <br>
+            <!--När man trycker på texten hamnar man i toppen igen-->
+            <h3><a onclick="backtotopFunction()">tryck för att gå till toppen</a></h3>
+        </div>
+    </div>
+
+</body>
+
+</html>
